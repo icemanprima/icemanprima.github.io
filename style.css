@@ -11,7 +11,7 @@
 
 body {
 	margin:0;
-
+	background-color:orange;
 }
 
 
@@ -59,35 +59,33 @@ body {
 
 #text {
 	font-family: "Quicksand", serif;
-	position:absolute;
-	text-align:left;
 	color: #cdc7b8;
-	font-size:3.5vh;
-	height:auto;
-	width:42.5vw;
-	left:3.5vw;
-	top:30vh;
+	font-size:3vh;
 
+	width: 40vw;
+	height: 100%;
+}
+
+#flexcontent {
+	position:absolute;
+	display: flex;
+	flex-wrap: wrap;
+
+	top:30vh;
+	left:5vw;
+	height: 40vh;
+	width: 90vw;
 }
 
 #socialbtns {
-
-	position:absolute;
-	text-align:right;
-	background-color:none;
+	margin-top: auto;
+	margin-bottom:auto;
+	margin-left: auto;
+	width: auto;
 	height:10vh;
-	width:25vw;
-	left:71.5vw;
-	top: 45vh;
-	display: flex;
-  	flex-wrap: wrap;
-  	justify-content: flex-end;
-}
-#socialbtns > a > div {
-	margin-left:6vh;
-	margin-bottom:6vh;
-}
 
+}
+/** **/
 
 #facebook {
 	opacity:0.5;
@@ -96,6 +94,8 @@ body {
 	background-image: url('facebook.svg');
 	background-repeat:no-repeat;
 	background-size:100% auto;
+	float:left;
+	margin-right:10vh;
 
 }
 
@@ -116,5 +116,6 @@ body {
 	background-image: url('instagram.png');
 	background-repeat:no-repeat;
 	background-size:100% auto;
+	float: left; 
+} 
 
-}

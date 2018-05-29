@@ -13,22 +13,19 @@
   				  {
   				  	/** Porträtt **/
   			  		document.getElementById("backimg").style.backgroundSize = "auto 100%";
- 
-  			  		/** Rubrik **/
-  			  		document.getElementById("rubrik").style.fontSize = "7vh";
- 
 
-  			  		/** Underrubrik **/
-  			  		document.getElementById("underrubrik").style.fontSize = "3.2vh";
- 
+  			  		if (/Android|iPhone|iPod|BlackBerry|BB|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
+  			  			{
+                  document.getElementById("text").style.width = "auto";
+                  document.getElementById("socialbtns").style.marginRight = "auto";
+                  document.getElementById("headline").style.width ="100vw";
+                  document.getElementById("flexcontent").style.top ="30vh";
 
-  			  		/** Text **/
-  			  		document.getElementById("text").style.fontSize = "2.7vh";
-  			  		document.getElementById("text").style.width = "70vw";
+                  document.getElementById("rubrik").style.fontSize ="11vw";
+                  document.getElementById("underrubrik").style.fontSize ="7vw";
+                  document.getElementById("text").style.fontSize ="5vw";
+				    		}
 
-
-  			  		/** Headline **/
-  			  		document.getElementById("headline").style.width = "100vw";
 
   			 	 }
   				  else
@@ -36,20 +33,19 @@
   			 	 	/** Landskap **/
   			  		document.getElementById("backimg").style.backgroundSize = "100% auto";
 
-  		  			/** Rubrik **/
-  			  		document.getElementById("rubrik").style.fontSize = "5vw";
- 
 
-  			  		/** Underrubrik **/
-  			  		document.getElementById("underrubrik").style.fontSize = "2.5vw";
- 
+  			  		if (/Android|iPhone|iPod|BlackBerry|BB|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
+  			  			{
+                  document.getElementById("text").style.width = "60vw";
+                  document.getElementById("socialbtns").style.marginRight = "0";
+                  document.getElementById("headline").style.width ="60vw";
+                  document.getElementById("flexcontent").style.top ="40vh";
 
-  			  		/** Text **/
-  			  		document.getElementById("text").style.fontSize = "2.3vw";
-  			  		document.getElementById("text").style.width = "60vw";
+                  document.getElementById("rubrik").style.fontSize ="11vh";
+                  document.getElementById("underrubrik").style.fontSize ="7vh";
+                  document.getElementById("text").style.fontSize ="4vh";
 
-  			  		/** Headline **/
-  			  		document.getElementById("headline").style.width = "50vw";
+				    		}
 
   				  }
 			}
@@ -74,16 +70,18 @@
 			
 	
 			<div id="headline"><p id="rubrik">Brezza</p><p id="underrubrik">Bra mat å käk me' billi' bärts!</p></div>
-			<div id="text">Pri tota modus cu, vide nominati cum te. Viris intellegam philosophia usu cu, id ius bonorum consequuntur. Mei ea saepe eirmod. Autem putant ne mei, aeterno omnesque gloriatur id usu. Ne usu erat aeque semper, ut veniam admodum maiorum nam. Ea mea placerat singulis, duis inimicus no quo.</div>
+
+			<div id="flexcontent">
+				<div id="text">Pri tota modus cu, vide nominati cum te. Viris intellegam philosophia usu cu, id ius bonorum consequuntur. Mei ea saepe eirmod. Autem putant ne mei, aeterno omnesque gloriatur id usu. Ne usu erat aeque semper, ut veniam admodum maiorum nam. Ea mea placerat singulis, duis inimicus no quo.</div>
 		
 		
 
-			<div id="socialbtns">
-			<a href="https://www.facebook.com/" target="_blank">	<div id="facebook"></div>	</a>
-			<a href="https://www.instagram.com/" target="_blank">	<div id="instagram"></div>	</a>
+				<div id="socialbtns">
+				<a href="https://www.facebook.com/" target="_blank">	<div id="facebook"></div>	</a>
+				<a href="https://www.instagram.com/" target="_blank">	<div id="instagram"></div>	</a>
+				</div>
+
 			</div>
-
-
 
 		</body>
 
