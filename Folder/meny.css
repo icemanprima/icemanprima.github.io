@@ -1,0 +1,40 @@
+#mat {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+#mat > div {
+  
+  width: auto;
+  margin-left: 4vh;
+  text-align: center;
+  font-size: 3vh;
+}
+
+#pasta, #antipasto, #pizza, #desert {
+		position: absolute;
+		width: 60vw;
+		height: auto;
+		z-index: 	1;
+		font-size: 2vh;	
+}
+
+#mat > div:hover {
+	cursor:pointer;
+}
+
+
+#pasta {
+	background-color: AliceBlue;
+}
+
+#antipasto {
+	background-color: AntiqueWhite ;
+}
+#pizza {
+	background-color: Beige ;
+}
+#desert {
+	background-color: BurlyWood ;
+}
