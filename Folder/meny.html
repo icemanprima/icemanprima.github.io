@@ -7,24 +7,29 @@
 
 		<script>
 
-				
-				function moveup(first, second, third, fourth) {
+				var lastTextId = "desert";
+				var lastNavId = "btnDesert";
+				function moveup(idToShow, thisId) {
 
-					document.getElementById("pasta").style.display  = first;
-					document.getElementById("antipasto").style.display  = second;
-					document.getElementById("pizza").style.display  = third;
-					document.getElementById("desert").style.display  = fourth;
+					document.getElementById(lastTextId).style.display = "none";
+					document.getElementById(idToShow).style.display = "block";
 					
+					
+					document.getElementById(lastNavId).style.backgroundColor  = "transparent";
+					document.getElementById(thisId).style.backgroundColor  = "red";
+
+					lastTextId = idToShow;
+					lastNavId = thisId;
 				}
 		</script>
 
 
 		<BODY>	
 				<div id="mat"> 
-					<div><a onclick="moveup('block', 'none', 'none', 'none')">Pasta</a></div>
-					<div><a onclick="moveup('none', 'block', 'none', 'none')">Antipasto</a></div>
-					<div><a onclick="moveup('none', 'none', 'block', 'none')">Pizza</a></div>
-					<div><a onclick="moveup('none', 'none', 'none', 'block')">Desert</a></div>
+					<div id="btnPasta" onclick="moveup('pasta', this.id)"><a>Pasta</a></div>
+					<div id="btnAntipasto" onclick="moveup('antipasto', this.id)"><a>Antipasto</a></div>
+					<div id="btnPizza" onclick="moveup('pizza', this.id)"><a>Pizza</a></div>
+					<div id="btnDesert" onclick="moveup('desert', this.id)"><a>Desert</a></div>
 
 
 				</div>
